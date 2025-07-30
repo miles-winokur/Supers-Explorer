@@ -1,3 +1,24 @@
+// var heroAccessToken = "6a1b32f750b7a8c2d212967709165e99";
+// var heroesUrl = "https://superheroapi.com/api/" + heroAccessToken + "/search/";
+// var heroes = [
+//     "Spiderman",
+//     "Batman",
+//     "Iron Man",
+//     "Wonder Woman",
+//     "The Joker",
+//     "Captain America",
+//     "Loki",
+//     "Scarlet Witch",
+//     "Superman",
+//     "Black Panther",
+//     "Harley Quinn",
+//     "Thor",
+//     "Green Lantern",
+//     "Doctor Strange",
+//     "Catwoman",
+//     "The Flash"
+// ]
+
 function callWebService(requestUrl) {
     try {
         //create request
@@ -38,9 +59,13 @@ function displayNames(data) {
     for (var i = 0; i < data.length; i++) {
         var entry = document.createElement("div");
         var field = document.createElement("fieldset");
+
+        // CHANGE BELOW TO REFER TO ID AND UPDATE FUNCTIONS
         entry.onclick = function () { getStats(this) }
         entry.id = i;
-        entry.innerHTML = data[i].heroName;
+
+        // entry.innerHTML = data[i].heroName;
+        entry.innerHTML = "<img src=\"" + data[i].image + "\" alt=\"" + data[i].heroName + "\">"
         field.appendChild(entry);
         listBox.appendChild(field)
     }

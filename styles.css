@@ -6,3 +6,8 @@ body {
 a {
     color: rgb(251, 150, 150);
 }
+
+img {
+    width: 100px;
+    height: auto;
+}

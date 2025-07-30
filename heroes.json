@@ -1,10 +1,205 @@
 [
     {
-        "heroName": "Spiderman",
-        "powers": "Web-slinging"
+        "heroName": "Spider-Man",
+        "alterEgo": "Peter Parker",
+        "powers": [
+            "Wall-crawling",
+            "Super strength",
+            "Agility",
+            "Spider-sense"
+        ],
+        "publisher": "Marvel",
+        "allegiance": "Good",
+        "image": ""
     },
     {
         "heroName": "Batman",
-        "powers": "Stealth"
+        "alterEgo": "Bruce Wayne",
+        "powers": [
+            "Peak human condition",
+            "Martial arts",
+            "Detective skills",
+            "High-tech gadgets"
+        ],
+        "publisher": "DC Comics",
+        "allegiance": "Good",
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg"
+    },
+    {
+        "heroName": "Joker",
+        "alterEgo": "Unknown",
+        "powers": [
+            "Insanity",
+            "Criminal mastermind",
+            "Unpredictability"
+        ],
+        "publisher": "DC Comics",
+        "allegiance": "Bad",
+        "image": ""
+    },
+    {
+        "heroName": "Iron Man",
+        "alterEgo": "Tony Stark",
+        "powers": [
+            "Powered armor suit",
+            "Genius-level intellect",
+            "Advanced weaponry"
+        ],
+        "publisher": "Marvel",
+        "allegiance": "Good",
+        "image": ""
+    },
+    {
+        "heroName": "Loki",
+        "alterEgo": "Loki Laufeyson",
+        "powers": [
+            "Magic",
+            "Shape-shifting",
+            "Illusion",
+            "Longevity"
+        ],
+        "publisher": "Marvel",
+        "allegiance": "Bad",
+        "image": ""
+    },
+    {
+        "heroName": "Scarlet Witch",
+        "alterEgo": "Wanda Maximoff",
+        "powers": [
+            "Reality manipulation",
+            "Chaos magic",
+            "Telekinesis",
+            "Telepathy"
+        ],
+        "publisher": "Marvel",
+        "allegiance": "Good",
+        "image": ""
+    },
+    {
+        "heroName": "Superman",
+        "alterEgo": "Clark Kent / Kal-El",
+        "powers": [
+            "Super strength",
+            "Flight",
+            "Heat vision",
+            "Invulnerability",
+            "X-ray vision"
+        ],
+        "publisher": "DC Comics",
+        "allegiance": "Good",
+        "image": ""
+    },
+    {
+        "heroName": "Wonder Woman",
+        "alterEgo": "Diana Prince",
+        "powers": [
+            "Super strength",
+            "Flight",
+            "Combat skills",
+            "Lasso of truth"
+        ],
+        "publisher": "DC Comics",
+        "allegiance": "Good",
+        "image": ""
+    },
+    {
+        "heroName": "Green Goblin",
+        "alterEgo": "Norman Osborn",
+        "powers": [
+            "Enhanced strength",
+            "Intelligence",
+            "Weapons",
+            "Glider"
+        ],
+        "publisher": "Marvel",
+        "allegiance": "Bad",
+        "image": ""
+    },
+    {
+        "heroName": "Captain America",
+        "alterEgo": "Steve Rogers",
+        "powers": [
+            "Super soldier serum",
+            "Enhanced agility",
+            "Enhanced strength",
+            "Strategic mind"
+        ],
+        "publisher": "Marvel",
+        "allegiance": "Good",
+        "image": ""
+    },
+    {
+        "heroName": "Harley Quinn",
+        "alterEgo": "Harleen Quinzel",
+        "powers": [
+            "Agility",
+            "Immunity to toxins",
+            "Unpredictability"
+        ],
+        "publisher": "DC Comics",
+        "allegiance": "Bad",
+        "image": ""
+    },
+    {
+        "heroName": "The Flash",
+        "alterEgo": "Barry Allen",
+        "powers": [
+            "Super speed",
+            "Time travel",
+            "Quick healing"
+        ],
+        "publisher": "DC Comics",
+        "allegiance": "Good",
+        "image": ""
+    },
+    {
+        "heroName": "Doctor Strange",
+        "alterEgo": "Stephen Strange",
+        "powers": [
+            "Sorcery",
+            "Time manipulation",
+            "Dimensional travel"
+        ],
+        "publisher": "Marvel",
+        "allegiance": "Good",
+        "image": ""
+    },
+    {
+        "heroName": "Thanos",
+        "alterEgo": "Thanos",
+        "powers": [
+            "Super strength",
+            "Cosmic energy",
+            "Intellect",
+            "Infinity Gauntlet"
+        ],
+        "publisher": "Marvel",
+        "allegiance": "Bad",
+        "image": ""
+    },
+    {
+        "heroName": "Aquaman",
+        "alterEgo": "Arthur Curry",
+        "powers": [
+            "Aquatic telepathy",
+            "Super strength",
+            "Underwater survival"
+        ],
+        "publisher": "DC Comics",
+        "allegiance": "Good",
+        "image": ""
+    },
+    {
+        "heroName": "Black Panther",
+        "alterEgo": "T'Challa",
+        "powers": [
+            "Enhanced strength",
+            "Enhanced senses",
+            "Vibranium suit",
+            "Martial arts"
+        ],
+        "publisher": "Marvel",
+        "allegiance": "Good",
+        "image": ""
     }
 ]
