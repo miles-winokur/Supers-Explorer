@@ -1,23 +1,4 @@
 // var heroAccessToken = "6a1b32f750b7a8c2d212967709165e99";
-// var heroesUrl = "https://superheroapi.com/api/" + heroAccessToken + "/search/";
-// var heroes = [
-//     "Spiderman",
-//     "Batman",
-//     "Iron Man",
-//     "Wonder Woman",
-//     "The Joker",
-//     "Captain America",
-//     "Loki",
-//     "Scarlet Witch",
-//     "Superman",
-//     "Black Panther",
-//     "Harley Quinn",
-//     "Thor",
-//     "Green Lantern",
-//     "Doctor Strange",
-//     "Catwoman",
-//     "The Flash"
-// ]
 
 function callWebService(requestUrl) {
     try {
@@ -46,32 +27,34 @@ function parseData(asyncRequest) {
     if (asyncRequest.readyState == 4 & asyncRequest.status == 200) {
         //convert JSON string to an object
         var data = JSON.parse(asyncRequest.responseText);
-        displayNames(data);
+        displayImages(data);
     }
 }
 
-//displays all the names of the heroes
-function displayNames(data) {
-    var listBox = document.getElementById("names");
+//displays all the images of the heroes
+function displayImages(data) {
+    var listBox = document.getElementById("heroes");
     listBox.innerHTML = ""; // clears all the heroes
 
     // iterates over all heroes and displays them
     for (var i = 0; i < data.length; i++) {
-        var entry = document.createElement("div");
-        var field = document.createElement("fieldset");
+        var span = document.createElement("span");
 
-        // CHANGE BELOW TO REFER TO ID AND UPDATE FUNCTIONS
-        entry.onclick = function () { getStats(this) }
-        entry.id = i;
+        span.onclick = function () { getInfo(this) };
+        span.id = i;
 
-        // entry.innerHTML = data[i].heroName;
-        entry.innerHTML = "<img src=\"" + data[i].image + "\" alt=\"" + data[i].heroName + "\">"
-        field.appendChild(entry);
-        listBox.appendChild(field)
+        // Moves to a new line after every 4th span element
+        if (i != 0 && i % 4 == 0) {
+            var br = document.createElement("br");
+            listBox.appendChild(br);
+        }
+
+        span.innerHTML = "<img src=\"" + data[i].image + "\" alt=\"" + data[i].heroName + "\">"
+        listBox.appendChild(span);
     }
 }
 
-function getStats(entry) {
+function getInfo(entry) {
     //attempt to send an async request
     try {
         //create request
@@ -79,7 +62,7 @@ function getStats(entry) {
 
         //setup callback function and store it
         asyncRequest.addEventListener("readystatechange", function () {
-            displayStats(entry, asyncRequest) //calls displayStats() function, a callback function
+            displayInfo(entry, asyncRequest) //calls displayInfo() function, a callback function
         }, false)
 
         //send the asynchronous request
@@ -88,22 +71,33 @@ function getStats(entry) {
         asyncRequest.send();
     }
     catch (exception) {
-        alert("Unable to complete getStats request...")
+        alert("Unable to complete getInfo request...")
     }
 
 }
 
-function displayStats(entry, asyncRequest) {
+function displayInfo(entry, asyncRequest) {
     //if request completed successfully, process request
     if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {
         //convert JSON string to an object
         var data = JSON.parse(asyncRequest.responseText);
         var heroId = entry.id //get id of the hero clicked
-        var name = entry.innerHTML
-        entry.innerHTML = name + "<br>" + data[heroId].powers;
+        var originalContent = entry.innerHTML
+        var alterEgo = document.createElement("p");
+        var powers = document.createElement("p");
+        var publisher = document.createElement("p");
+        var allegiance = document.createElement("p");
+
+        alterEgo.innerHTML = "<strong>Alter Ego:</strong> " + data[heroId].alterEgo
+        powers.innerHTML = "<strong>Powers:</strong> " + data[heroId].powers.join(", ")
+        publisher.innerHTML = "<strong>Publisher:</strong> " + data[heroId].publisher
+        allegiance.innerHTML = "<strong>Allegiance:</strong> " + data[heroId].allegiance
+        entry.innerHTML = "<h2>" + data[heroId].heroName + "</h2>";
+
+        entry.append(alterEgo, powers, publisher, allegiance);
 
         entry.onclick = function () {
-            clearField(entry, name);
+            clearField(entry, originalContent);
         }
     }
 }
@@ -111,7 +105,7 @@ function displayStats(entry, asyncRequest) {
 function clearField(entry, name) {
     entry.innerHTML = name;
     entry.onclick = function () {
-        getStats(entry);
+        getInfo(entry);
     }
 }
 

@@ -1,6 +1,12 @@
 body {
     background-color: rgb(111, 0, 0);
     color: white;
+    text-align: center;
+
+}
+
+.header {
+    font-size: 50px;
 }
 
 a {
@@ -8,6 +14,17 @@ a {
 }
 
 img {
-    width: 100px;
+    width: 250px;
     height: auto;
+}
+
+#heroes span {
+    border: 5px solid white;
+    margin: 15px;
+    padding: 10px;
+    display: inline-block;
+    width: 250px;
+    height: 334px;
+    vertical-align: top;
+    font-size: 20px;
 }
