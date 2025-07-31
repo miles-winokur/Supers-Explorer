@@ -10,7 +10,7 @@
         ],
         "publisher": "Marvel",
         "allegiance": "Good",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/133.jpg"
     },
     {
         "heroName": "Batman",
@@ -35,7 +35,7 @@
         ],
         "publisher": "DC Comics",
         "allegiance": "Bad",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/719.jpg"
     },
     {
         "heroName": "Iron Man",
@@ -47,7 +47,7 @@
         ],
         "publisher": "Marvel",
         "allegiance": "Good",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/85.jpg"
     },
     {
         "heroName": "Loki",
@@ -60,7 +60,7 @@
         ],
         "publisher": "Marvel",
         "allegiance": "Bad",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/928.jpg"
     },
     {
         "heroName": "Scarlet Witch",
@@ -73,7 +73,7 @@
         ],
         "publisher": "Marvel",
         "allegiance": "Good",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/444.jpg"
     },
     {
         "heroName": "Superman",
@@ -87,7 +87,7 @@
         ],
         "publisher": "DC Comics",
         "allegiance": "Good",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/791.jpg"
     },
     {
         "heroName": "Wonder Woman",
@@ -100,7 +100,7 @@
         ],
         "publisher": "DC Comics",
         "allegiance": "Good",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/807.jpg"
     },
     {
         "heroName": "Green Goblin",
@@ -113,7 +113,7 @@
         ],
         "publisher": "Marvel",
         "allegiance": "Bad",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/579.jpg"
     },
     {
         "heroName": "Captain America",
@@ -126,7 +126,7 @@
         ],
         "publisher": "Marvel",
         "allegiance": "Good",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/274.jpg"
     },
     {
         "heroName": "Harley Quinn",
@@ -138,7 +138,7 @@
         ],
         "publisher": "DC Comics",
         "allegiance": "Bad",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/701.jpg"
     },
     {
         "heroName": "The Flash",
@@ -150,7 +150,7 @@
         ],
         "publisher": "DC Comics",
         "allegiance": "Good",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/891.jpg"
     },
     {
         "heroName": "Doctor Strange",
@@ -162,7 +162,7 @@
         ],
         "publisher": "Marvel",
         "allegiance": "Good",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/55.jpg"
     },
     {
         "heroName": "Thanos",
@@ -175,7 +175,7 @@
         ],
         "publisher": "Marvel",
         "allegiance": "Bad",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/1305.jpg"
     },
     {
         "heroName": "Aquaman",
@@ -187,7 +187,7 @@
         ],
         "publisher": "DC Comics",
         "allegiance": "Good",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/634.jpg"
     },
     {
         "heroName": "Black Panther",
@@ -200,6 +200,6 @@
         ],
         "publisher": "Marvel",
         "allegiance": "Good",
-        "image": ""
+        "image": "https://www.superherodb.com/pictures2/portraits/10/100/247.jpg"
     }
 ]
