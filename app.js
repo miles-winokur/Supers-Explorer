@@ -31,12 +31,12 @@ function parseData(asyncRequest) {
     }
 }
 
-//displays all the images of the heroes
+//displays all the images of the supers
 function displayImages(data) {
-    var listBox = document.getElementById("heroes");
-    listBox.innerHTML = ""; // clears all the heroes
+    var listBox = document.getElementById("supers");
+    listBox.innerHTML = ""; // clears all the supers
 
-    // iterates over all heroes and displays them
+    // iterates over all supers and displays them
     for (var i = 0; i < data.length; i++) {
         var span = document.createElement("span");
 
